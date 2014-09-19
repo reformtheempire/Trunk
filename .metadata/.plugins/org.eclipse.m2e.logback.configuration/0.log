@@ -429,3 +429,7 @@
 2014-09-19 19:35:17,639 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\OCPH\src\main\resources
 2014-09-19 19:35:17,640 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2014-09-19 19:35:17,641 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\OCPH\src\test\resources
+2014-09-19 19:38:59,033 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-09-19 19:38:59,035 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\OCPH\src\main\resources
+2014-09-19 19:38:59,036 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-09-19 19:38:59,037 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\OCPH\src\test\resources
