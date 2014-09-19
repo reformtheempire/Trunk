@@ -9,11 +9,9 @@ public class ocph_launch {
 	
 	
 	public void gameLoop(Game game){
-		
-		while(game.gameOver == false){
+		while{
 			
 		}
-		
 	}
 	
 }
