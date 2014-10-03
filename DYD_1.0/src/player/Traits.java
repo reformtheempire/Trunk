@@ -1,6 +1,6 @@
 package player;
 
-public class User {
+public class Traits {
 	private String name;
 	private String health;
 	private String race;
@@ -48,7 +48,7 @@ public class User {
 		this.agility = agility;
 	}
 
-	public User(String name, String health, String race, int strength,
+	public Traits(String name, String health, String race, int strength,
 			int agility) {
 		super();
 		this.name = name;

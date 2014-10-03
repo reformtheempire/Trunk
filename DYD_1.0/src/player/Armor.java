@@ -11,6 +11,14 @@ public class Armor {
 		return helmet;
 	}
 
+	public Armor(int helmet, int chestplate, int leggings, int boots) {
+		super();
+		this.helmet = helmet;
+		this.chestplate = chestplate;
+		this.leggings = leggings;
+		this.boots = boots;
+	}
+
 	public void setHelmet(int helmet) {
 		this.helmet = helmet;
 	}
