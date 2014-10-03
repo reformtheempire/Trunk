@@ -2,7 +2,7 @@ package player;
 
 public class Traits {
 	private String name;
-	private String health;
+	private int health;
 	private String race;
 	
 	private int strength;
@@ -16,11 +16,11 @@ public class Traits {
 		this.name = name;
 	}
 
-	public String getHealth() {
+	public int getHealth() {
 		return health;
 	}
 
-	public void setHealth(String health) {
+	public void setHealth(int health) {
 		this.health = health;
 	}
 
@@ -48,7 +48,7 @@ public class Traits {
 		this.agility = agility;
 	}
 
-	public Traits(String name, String health, String race, int strength,
+	public Traits(String name, int health, String race, int strength,
 			int agility) {
 		super();
 		this.name = name;
