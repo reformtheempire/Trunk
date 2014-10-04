@@ -9,7 +9,14 @@ public class Orc extends Monster {
 		super(health, attackPower, name);
 	}
 
+	public String printMonster(){
+		return super.toString();
+	}
+	
 	public void injure(int amount) {
 		super.injure(amount);
+		if(super.getHealth() < 0){
+			super.setHealth(0);
+		}
 	}
 }

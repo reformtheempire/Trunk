@@ -27,6 +27,10 @@ public class Player {
 		inventory.setWeapon(weapon);
 	}
 	
+	public String getWeapon(){
+		return inventory.getWeapon();
+	}
+	
 	public void pickupItem(String item){
 		inventory.addItemToBackpack(item);
 	}

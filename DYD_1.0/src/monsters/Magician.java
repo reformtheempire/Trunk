@@ -12,4 +12,7 @@ public class Magician extends Monster{
 	public void injure(int amount) {
 		super.injure(amount);
 	}
+	public String printMonster(){
+		return super.toString();
+	}
 }

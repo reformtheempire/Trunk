@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Monster {
+	@Override
+	public String toString() {
+		return "Monster [health=" + health + ", attackPower=" + attackPower
+				+ ", name=" + name + ", attacks=" + attacks + "]";
+	}
+
 	public Monster(int health, int attackPower, String name) {
 		super();
 		this.health = health;
