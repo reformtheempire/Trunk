@@ -3,6 +3,8 @@ package monsters;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import player.Player;
+
 public class Monster {
 	@Override
 	public String toString() {
@@ -10,13 +12,15 @@ public class Monster {
 				+ ", name=" + name + ", attacks=" + attacks + "]";
 	}
 
-	public Monster(int health, int attackPower, String name) {
+	public Monster(int health, int attackPower, String name, String weapon) {
 		super();
 		this.health = health;
 		this.attackPower = attackPower;
 		this.name = name;
+		this.weapon = weapon;
 	}
 
+	private String weapon;
 	private int health;
 	private int attackPower;
 	private String name;
@@ -57,5 +61,9 @@ public class Monster {
 		if(getHealth()<0) {
 			setHealth(0);
 		}
+	}
+	
+	public void attackPlayer(Player player){
+		
 	}
 }
