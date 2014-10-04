@@ -6,11 +6,22 @@ import java.util.Collection;
 public class Inventory {
 
 	private Collection<String> backpack = new ArrayList<String>();
+	private String weapon;
+
+
+	public String getWeapon() {
+		return weapon;
+	}
+
+	public Inventory(String weapon) {
+		super();
+		this.weapon = weapon;
+	}
 
 	public void addItemToBackpack(String item) {
 		backpack.add(item);
 	}
-
+	
 	public void removeItemFromBackpack(String item) {
 		backpack.remove(item);
 	}

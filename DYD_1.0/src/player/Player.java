@@ -4,8 +4,10 @@ import input_output.IO;
 
 public class Player {
 	
+	public static String weapon = IO.msgInString("Select weapon: ");
+	
 	private static Armor armor = new Armor(0, 0, 0, 0);
-	private static Inventory inventory = new Inventory();
+	private static Inventory inventory = new Inventory(weapon);
 	private static Traits traits = new Traits(IO.msgInString("Welcome adventurer, \nEnter your name:") , 100, "Human", 15, 5);
 	
 	public void printPlayer(){
