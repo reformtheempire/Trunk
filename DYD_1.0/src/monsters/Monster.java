@@ -48,5 +48,8 @@ public class Monster {
 	
 	public void injure(int damage) {
 		setHealth(getHealth() - damage);
+		if(getHealth()<0) {
+			setHealth(0);
+		}
 	}
 }
