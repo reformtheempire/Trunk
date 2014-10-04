@@ -7,6 +7,8 @@ import player.Player;
 public class DYD {
 
 	public static void main(String[] args) {
+		Music music = new Music();
+		music.playMusic();
 		Player player = Setup.makePlayer();
 		Orc monster = new Orc("John");
 		Attacks attacks = new Attacks();
