@@ -12,13 +12,13 @@ public class DYD {
 		Attacks attacks = new Attacks();
 		//DEBUG
 		player.printPlayer();
-
+		//DEBUG
 		
 		System.out.println(monster.printMonster());
 		
 		attacks.attack(player, monster);
 		
 		System.out.println(monster.printMonster());
-		//DEBUG END
+
 		}
 }
