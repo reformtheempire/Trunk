@@ -1,5 +1,6 @@
 package player;
 
+
 public class Traits {
 	@Override
 	public String toString() {
@@ -12,6 +13,8 @@ public class Traits {
 	private String race;
 	private int strength;
 	private int agility;
+	
+
 	
 	public String getName() {
 		return name;

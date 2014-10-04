@@ -12,9 +12,7 @@ public class Inventory {
 	public String getWeapon() {
 		return weapon;
 	}
-
-	public Inventory(String weapon) {
-		super();
+	public void setWeapon(String weapon) {
 		this.weapon = weapon;
 	}
 

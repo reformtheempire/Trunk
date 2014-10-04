@@ -4,16 +4,27 @@ import input_output.IO;
 
 public class Player {
 	
-	public static String weapon = IO.msgInString("Select weapon: ");
 	
+
 	private static Armor armor = new Armor(0, 0, 0, 0);
-	private static Inventory inventory = new Inventory(weapon);
+	private static Inventory inventory = new Inventory();
 	private static Traits traits = new Traits(IO.msgInString("Welcome adventurer, \nEnter your name:") , 100, "Human", 15, 5);
+	private static Attacks attacks = new Attacks();
 	
 	public void printPlayer(){
 		System.out.println(traits.toString());
 		System.out.println(armor.toString());
+		System.out.println("WEAPON: " + inventory.getWeapon());
+		System.out.println("ATTACKS: "+ attacks.printAttacks());
 		System.out.println("INVENTORY: " + inventory.toString());
+	}
+	
+	public void addAttack(String attack){
+		attacks.addAttack(attack);
+	}
+	
+	public void setWeapon(String weapon){
+		inventory.setWeapon(weapon);
 	}
 	
 	public void pickupItem(String item){

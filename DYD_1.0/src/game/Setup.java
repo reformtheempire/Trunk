@@ -22,14 +22,24 @@ public class Setup {
 		
 		if(choice == 1){
 			player.pickupItem("Wooden Sword");
+			player.setWeapon("Sword");
+			player.addAttack("Swing");
 		}else if(choice == 2){
 			player.pickupItem("Oaken Staff");
+			player.setWeapon("Staff");
+			player.addAttack("Hit");
 		}else if(choice == 3){
 			player.pickupItem("Old Shoe");
+			player.setWeapon("Shoe");
+			player.addAttack("Whack");
 		}else if(choice == 4){
 			player.pickupItem("Stick");
+			player.setWeapon("Stick");
+			player.addAttack("Poke");
 		}else if(choice == 5){
-			player.pickupItem("Ye Olde Times (NEWSPAPER)");
+			player.pickupItem("Ye Olde Times");
+			player.setWeapon("Newspaper");
+			player.addAttack("Read Newspaper");
 		}else{
 			getStartingWeapon(player);
 		}
