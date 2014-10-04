@@ -12,10 +12,6 @@ public class Traits {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public int getHealth() {
 		return health;
 	}
@@ -28,24 +24,12 @@ public class Traits {
 		return race;
 	}
 
-	public void setRace(String race) {
-		this.race = race;
-	}
-
 	public int getStrength() {
 		return strength;
 	}
 
-	public void setStrength(int strength) {
-		this.strength = strength;
-	}
-
 	public int getAgility() {
 		return agility;
-	}
-
-	public void setAgility(int agility) {
-		this.agility = agility;
 	}
 
 	public Traits(String name, int health, String race, int strength,
