@@ -18,4 +18,8 @@ public class Inventory {
 	public boolean doesBackpackContain(String item) {
 		return backpack.contains(item);
 	}
+	
+	public String toString(){
+		return backpack.toString();
+	}
 }

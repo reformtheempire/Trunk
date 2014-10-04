@@ -1,10 +1,15 @@
 package player;
 
 public class Traits {
+	@Override
+	public String toString() {
+		return "Traits [name=" + name + ", health=" + health + ", race=" + race
+				+ ", strength=" + strength + ", agility=" + agility + "]";
+	}
+
 	private String name;
 	private int health;
 	private String race;
-	
 	private int strength;
 	private int agility;
 	

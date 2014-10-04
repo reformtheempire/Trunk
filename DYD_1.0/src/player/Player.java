@@ -1,11 +1,18 @@
 package player;
 
-public class Player {
+import input_output.IO;
 
+public class Player {
 	
 	private static Armor armor = new Armor(0, 0, 0, 0);
 	private static Inventory inventory = new Inventory();
-	private static Traits traits = new Traits("Hello", 100, "Human", 15, 5);
+	private static Traits traits = new Traits(IO.msgInString("Welcome adventurer, \nEnter your name:") , 100, "Human", 15, 5);
+	
+	public void printPlayer(){
+		System.out.println(traits.toString());
+		System.out.println(armor.toString());
+		System.out.println("INVENTORY: " + inventory.toString());
+	}
 	
 	public void pickupItem(String item){
 		inventory.addItemToBackpack(item);

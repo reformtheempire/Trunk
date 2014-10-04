@@ -21,6 +21,9 @@ public class IO {
 		}catch(NullPointerException e){
 			msgOut("Invalid entry, Please enter a whole number");
 			input = 1337;
+		}catch(NumberFormatException e){
+			msgOut("Invalid entry, Please enter a whole number");
+			input = 1337;
 		}
 		}while(input == 1337);
 		return input;
@@ -34,6 +37,9 @@ public class IO {
 			input = Double.parseDouble(JOptionPane.showInputDialog(message));
 		}catch(NullPointerException e){
 			msgOut("Invalid entry, Please enter a number with a decimal point");
+			input = 1337;
+		}catch(NumberFormatException e){
+			msgOut("Invalid entry, Please enter a whole number");
 			input = 1337;
 		}
 		}while(input == 1337);

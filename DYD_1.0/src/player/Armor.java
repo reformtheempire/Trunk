@@ -2,6 +2,12 @@ package player;
 
 public class Armor {
 
+	@Override
+	public String toString() {
+		return "Armor [helmet=" + helmet + ", chestplate=" + chestplate
+				+ ", leggings=" + leggings + ", boots=" + boots + "]";
+	}
+
 	private int helmet;
 	private int chestplate;
 	private int leggings;
