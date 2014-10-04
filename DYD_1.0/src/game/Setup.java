@@ -32,6 +32,8 @@ public class Setup {
 			player.pickupItem("Old Shoe");
 			player.setWeapon("Shoe");
 			player.addAttack("Whack");
+			player.addAttack("Release scent");
+			player.addAttack("Throw");
 		}else if(choice == 4){
 			player.pickupItem("Stick");
 			player.setWeapon("Stick");
@@ -39,7 +41,8 @@ public class Setup {
 		}else if(choice == 5){
 			player.pickupItem("Ye Olde Times");
 			player.setWeapon("Newspaper");
-			player.addAttack("Read Newspaper");
+			player.addAttack("Read");
+			player.addAttack("Throw");
 		}else{
 			getStartingWeapon(player);
 		}
