@@ -24,6 +24,7 @@ public class PlayingPieceImpl implements PlayingPiece {
 		this.hasMoved = false;
 		this.position = p;
 	}
+	
 
 	/**
 	 * Used to move a piece from one cell to another (and possibly take piece)
