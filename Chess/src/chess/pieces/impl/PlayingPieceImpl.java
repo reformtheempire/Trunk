@@ -18,9 +18,11 @@ public class PlayingPieceImpl implements PlayingPiece {
 
 	private boolean hasMoved;
 	private Movements movements;
+	private Position position;
 
 	public PlayingPieceImpl(Position p) {
 		this.hasMoved = false;
+		this.position = p;
 	}
 
 	/**
@@ -76,6 +78,8 @@ public class PlayingPieceImpl implements PlayingPiece {
 		return movements;
 	}
 
-	
+	public Position getPosition(){
+		return this.position;
+	}
 	
 }

@@ -38,4 +38,6 @@ public interface PlayingPiece {
 	public Collection<Position> getMoves(Collection<String> allowedMoves);
 	
 	public boolean hasMoved();
+	
+	public Position getPosition();
 }
