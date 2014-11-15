@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import chess.location.movement.Movements;
 import chess.location.movement.Position;
+import chess.location.movement.pieces.PiecesEnum;
 import chess.pieces.PlayingPiece;
 
 /**
@@ -16,13 +17,15 @@ import chess.pieces.PlayingPiece;
 
 public class PlayingPieceImpl implements PlayingPiece {
 
+	public PiecesEnum type;
 	private boolean hasMoved;
 	private Movements movements;
 	private Position position;
 
-	public PlayingPieceImpl(Position p) {
+	public PlayingPieceImpl(Position p, PiecesEnum type) {
 		this.hasMoved = false;
 		this.position = p;
+		this.type = type;
 	}
 	
 

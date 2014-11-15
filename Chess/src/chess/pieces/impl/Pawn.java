@@ -1,11 +1,12 @@
 package chess.pieces.impl;
 
 import chess.location.movement.Position;
+import chess.location.movement.pieces.PiecesEnum;
 
 public class Pawn extends PlayingPieceImpl {
 	
-	public Pawn(Position p) {
-		super(p);
+	public Pawn(Position p, PiecesEnum type) {
+		super(p, type);
 		setMoves();
 	}
 	
