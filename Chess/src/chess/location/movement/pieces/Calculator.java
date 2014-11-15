@@ -5,6 +5,7 @@ package chess.location.movement.pieces;
 
 import java.util.Collection;
 
+import chess.location.movement.Position;
 import chess.pieces.impl.PlayingPieceImpl;
 
 /**
@@ -13,6 +14,6 @@ import chess.pieces.impl.PlayingPieceImpl;
  *
  */
 public interface Calculator {
-	public Collection<String> getMoves(PlayingPieceImpl piece);
+	public Collection<Position> getMoves(PlayingPieceImpl piece);
 		
 }
