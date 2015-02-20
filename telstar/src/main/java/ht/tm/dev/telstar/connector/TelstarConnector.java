@@ -4,24 +4,29 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class TelstarConnector {
 	
+	private Logger log;
 	private String host;
 	private int port;
 	private Socket connection;
-	
+
 	public TelstarConnector(String host, int port) {
 		this.host = host;
 		this.port = port;
 		connection = new Socket();
+		log = LoggerFactory.getLogger(TelstarConnector.class);
 	}
 
-	public void establishConnection(){
+	public void establishConnection() {
 		try {
 			connection.connect(new InetSocketAddress(host, port));
-			System.out.println("Connected to: " + host + ":" + port);
+			log.info("Connected to: " + host + ":" + port);
 		} catch (IOException e) {
-			System.err.println("Cannot Connect to " + host + ":" + port);
+			log.error("Cannot Connect to " + host + ":" + port);
 			e.printStackTrace();
 		}
 	}
@@ -45,14 +50,14 @@ public class TelstarConnector {
 	public Socket getConnection() {
 		return connection;
 	}
-	
-	public void closeConnection(){
+
+	public void closeConnection() {
 		try {
 			connection.close();
 		} catch (IOException e) {
-			System.err.println("could not close connection");
+			log.error("could not close connection");
 			e.printStackTrace();
 		}
 	}
-	
+
 }
