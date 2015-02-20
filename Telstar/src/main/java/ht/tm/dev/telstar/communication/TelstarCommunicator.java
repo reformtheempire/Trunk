@@ -39,14 +39,16 @@ public class TelstarCommunicator {
 	 *
 	 * @param socket - a socket that has been connected to a TELNET server
 	 */
-	public void attachToSocket(Socket socket) {
+	public boolean attachToSocket(Socket socket) {
 		try {
 			systemOut = new PrintWriter(socket.getOutputStream(), true);
 			systemIn = new BufferedReader(new InputStreamReader(
 					socket.getInputStream()));
+			return true;
 		} catch (IOException e) {
 			log.error("Failed to attach to socket");
 			e.printStackTrace();
+			return false;
 		}
 	}
 	

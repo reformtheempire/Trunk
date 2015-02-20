@@ -21,13 +21,15 @@ public class TelstarConnector {
 		log = LoggerFactory.getLogger(TelstarConnector.class);
 	}
 
-	public void establishConnection() {
+	public boolean establishConnection() {
 		try {
 			connection.connect(new InetSocketAddress(host, port));
 			log.info("Connected to: " + host + ":" + port);
+			return true;
 		} catch (IOException e) {
 			log.error("Cannot Connect to " + host + ":" + port);
 			e.printStackTrace();
+			return false;
 		}
 	}
 
