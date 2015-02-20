@@ -812,3 +812,68 @@ org.eclipse.core.runtime.CoreException: Could not write file: T:\RTE github\Trun
 	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1348) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
 	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.0.v20140424-0053.jar:na]
+2015-01-23 23:41:36,035 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:41:36,649 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:41:36,652 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:41:36,653 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:41:36,655 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:41:36,688 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Helena/src
+2015-01-23 23:41:36,688 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Helena/src/test/java because it overlaps with /Helena/src
+2015-01-23 23:41:36,788 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-01-23 23:41:36,851 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:41:37,056 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Helena/src
+2015-01-23 23:41:37,056 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Helena/src/test/java because it overlaps with /Helena/src
+2015-01-23 23:41:37,083 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-01-23 23:41:37,689 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:41:37,691 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:41:37,692 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:41:37,694 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:43:12,410 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:12,412 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:43:12,413 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:12,415 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:43:18,214 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:18,217 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:43:18,218 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:18,221 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:43:47,505 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:43:47,529 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:47,531 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:43:47,532 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:47,533 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:43:52,560 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:43:52,586 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:52,588 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:43:52,589 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:52,591 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:43:54,863 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:43:54,884 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:54,886 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:43:54,887 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:43:54,889 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:44:09,285 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-01-23 23:44:09,329 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:44:09,354 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Helena/src
+2015-01-23 23:44:09,355 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Helena/src/test/java because it overlaps with /Helena/src
+2015-01-23 23:44:09,392 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-01-23 23:44:09,525 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:44:09,531 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:44:09,533 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:44:09,538 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:44:34,845 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:44:34,848 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:44:34,849 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:44:34,864 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:45:02,425 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-01-23 23:45:02,469 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Helena:Helena:0.0.1-SNAPSHOT @ T:\RTE github\Trunk\Helena\pom.xml.
+2015-01-23 23:45:02,491 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Helena/src
+2015-01-23 23:45:02,491 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Helena/src/test/java because it overlaps with /Helena/src
+2015-01-23 23:45:02,522 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-01-23 23:45:02,907 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:45:02,909 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:45:02,910 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:45:02,912 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
+2015-01-23 23:45:20,420 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:45:20,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\main\resources
+2015-01-23 23:45:20,425 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-01-23 23:45:20,428 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory T:\RTE github\Trunk\Helena\src\test\resources
