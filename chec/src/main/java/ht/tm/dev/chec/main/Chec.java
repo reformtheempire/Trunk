@@ -10,6 +10,7 @@ import ht.tm.dev.chec.whois.telstar.methods.TelstarWHOISInterface;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Properties;
 
 import org.apache.commons.lang3.StringUtils;
@@ -22,18 +23,29 @@ public class Chec {
 	public static Logger log;
 
 	public static void main(String args[]) {
+		if(args == null || args.length == 0){
+			log.error("No Domain Specified");
+			System.exit(1);
+		}
 		log = LoggerFactory.getLogger(Chec.class);
 		BasicConfigurator.configure();
 		
-		ServerManager serverManager = new ServerManager();
-		serverManager.setupProperties();
-		serverManager.getServerDetails("UK");
+//		ServerManager serverManager = new ServerManager();
+//		serverManager.setupProperties();
+//		serverManager.getServerDetails("UK");
 		
-		//CommandCentre.getWhoisData(args);
 		
-		//setupProperties();
 		
-		WhoisData whoisData = new WhoisData(new Domain("google", "wales"), new WhoisServerDetails("whois.nic.wales", 43, "THE NOMINET WALES WHOIS SERVER"));
+	
+		
+		CommandCentre.getWhoisData(args);
+		Collection<String> parameters;
+		if(CommandCentre.hasParams()){
+			parameters = CommandCentre.getParams();
+			CommandCentre.examineParameters(parameters);
+		}
+		
+		WhoisData whoisData = CommandCentre.getData();
 		
 		TelstarWHOISInterface interface1 = new TelstarWHOISInterface(whoisData);
 		interface1.setupConnector();
