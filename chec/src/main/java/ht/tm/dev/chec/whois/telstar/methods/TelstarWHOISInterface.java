@@ -1,5 +1,7 @@
 package ht.tm.dev.chec.whois.telstar.methods;
 
+import ht.tm.dev.chec.domain.Domain;
+import ht.tm.dev.chec.domain.utils.DomainUtils;
 import ht.tm.dev.chec.whois.WhoisData;
 import ht.tm.dev.chec.whois.information.WhoisResponse;
 import ht.tm.dev.telstar.communication.TelstarCommunicator;
@@ -15,24 +17,29 @@ public class TelstarWHOISInterface {
 		communicator = new TelstarCommunicator();
 		this.whoisData = whoisData;
 	}
-	
+
 	/**
 	 * Returns true if connection is Established.
+	 * 
 	 * @param host
 	 * @param port
 	 * @return
 	 */
-	public boolean setupConnector(){
+	public boolean setupConnector() {
 		connector = new TelstarConnector(whoisData.getServer().getAddress(), whoisData.getServer().getPort());
 		return connector.establishConnection();
 	}
-	
-	public boolean attachCommunicator(){
+
+	public boolean attachCommunicator() {
 		return communicator.attachToSocket(connector.getConnection());
 	}
-	
-	public void getWhoisResponse(){
-		communicator.sendCommand(whoisData.getDomain().getKey() + "." + whoisData.getDomain().getSuffix());
+
+	public void getWhoisResponse() {
+		if(whoisData.getDomain().getSuffix().equalsIgnoreCase("com")){
+			communicator.sendCommand("=" + whoisData.getDomain().getKey() + "." + whoisData.getDomain().getSuffix());
+		}else{
+			communicator.sendCommand(whoisData.getDomain().getKey() + "." + whoisData.getDomain().getSuffix());			
+		}
 		whoisData.setResponse(new WhoisResponse(communicator.read()));
 		connector.closeConnection();
 	}
@@ -60,6 +67,5 @@ public class TelstarWHOISInterface {
 	public void setConnector(TelstarConnector connector) {
 		this.connector = connector;
 	}
-	
-	
+
 }
